@@ -1,68 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Job Listings</title>
 
-  <title>Frontend Mentor | Job Listings</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile-styles.css" />
+  </head>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/mobile-styles.css">
+  <body>
+    <header></header>
 
-</head>
+    <!-- FILTERS -->
 
-<body>
-  <header>
+    <div class="filters-container hidden">
 
-  </header>
-  <main>
-
-    <!-- MAIN COMPONENT -->
-
-    <!-- <div class="component">
-      <div class="logo-container">
-        <img class="logo" src="./images/photosnap.svg" alt="">
+      <div class="filters-left">
+        <!-- <div onclick="removeThis(event)" class="filter-container">
+          <p class="filter">HTML</p>
+          <p class="x-button">&MediumSpace; &#9587;</p>
+        </div>         -->
       </div>
-      <section class="info-left">
-        <em class="company">Photosnap</em>
-        <h2 class="new">NEW!</h2>
-        <h2 class="featured">featured</h2>
+      <div class="filters-right">
+        <p class="clear" onclick="removeAllFilters()">Clear</p>
+      </div>
 
-        <h1 class="position">Senior Frontend Developer</h1>
-        <ul>
-          <li class="postedAt">1d ago</li>
-          <li class="contract">Full Time</li>
-          <li class="location">USA only</li>
-        </ul>
-        
-      </section>
-      <section class="info-right">
-        <p class="role">Frontend</p>
-        <p class="level">Senior</p>
-        <p class="language">HTML</p>
-        <p class="language">CSS</p>
-        <p class="language">JavaScript</p>
-        <p class="tools"></p>
-      </section>
-    </div> -->
-  </main>
+    </div> 
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <main>
 
-  <script type="text/javascript" src="./js/data.js"></script>
-  <script type="text/JavaScript" src="./js/scripts.js"></script>
+      <!-- MAIN COMPONENT -->
 
-</body>
+      <!-- <div class="component">
+        <div class="logo-container">
+          <img class="logo" src="./images/photosnap.svg" alt="" />
+        </div>
+        <section class="info-left">
+          <em class="company">Photosnap</em>
+          <h2 class="new">NEW!</h2>
+          <h2 class="featured">featured</h2>
 
+          <h1 class="position">Senior Frontend Developer</h1>
+          <ul>
+            <li class="postedAt">1d ago</li>
+            <li class="contract">Full Time</li>
+            <li class="location">USA only</li>
+          </ul>
+        </section>
+        <section class="info-right">
+          <button onclick="" class="role">Frontend</button>
+          <button onclick="" class="level">Senior</button>
+          <button onclick="" class="language">HTML</button>
+          <button onclick="" class="language">CSS</button>
+          <button onclick="" class="language">JavaScript</button>
+        </section>
+      </div> -->
+      
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/JavaScript" src="./js/scripts.js"></script>
+  </body>
 </html>

@@ -12,8 +12,79 @@ body {
 header {
     background-image: url("../images/bg-header-desktop.svg");
     background-color: darkcyan;
-    height: 100px;
+    background-repeat: repeat-x;
+    height: 150px;
     width: 100%;
+}
+
+.filters-container{
+    position: relative;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 50px;
+    border-radius: 8px;
+    border-style: solid;
+    box-shadow: 0 11px 11px lightgray;
+    margin:20px 0;
+    width:calc(1440px - 80px);
+    height:auto;
+    margin:0 auto;
+    top:-50px;
+    padding:20px 40px;
+}
+
+.filters-left{
+    display: inline-block;
+}
+
+.filter-container{
+    display: inline-block;
+    background-color: darkcyan;
+    width:max-content;
+    padding: 0;
+    margin:0 5px;
+    border-radius: 8px;
+    cursor:pointer;
+
+}
+.filter-container:hover{
+    background-color: #202020;
+}
+
+.filter{
+    display: inline-block;
+    padding: 8px 10px;
+    font-weight: bold;
+    color: darkcyan;
+    background:whitesmoke;
+    border-radius: 4px;
+    border:none;
+}
+
+.x-button{
+    display: inline;
+    background: none;
+    margin:0;
+    color: white;
+    border: none;
+    text-align: center;
+    padding-right: 10px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.clear{
+    display: block;
+    text-align:right;
+    align-content: center;
+    cursor: pointer;
+    padding:10px;
+    font-weight: bold;
+    color: darkcyan;
+}
+.clear:hover{
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
 }
 
 main {
@@ -67,6 +138,17 @@ main {
     margin-right: 20px;
 }
 
+.info-left h1{
+    color:#202020;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.info-left h1:hover{
+    color:darkcyan;
+    cursor: pointer;
+}
+
 .info-left h2{
     display: inline;
     color: white;
@@ -107,12 +189,25 @@ main {
     text-align: right;
     margin: auto 0;
 }
-.info-right p{
+
+.info-right button:focus{
+    background:darkcyan;
+    color:whitesmoke;
+}
+
+.info-right button{
     display: inline-block;
-    margin: 15px 10px;
+    padding: 8px 10px;
+    margin:2px 5px;
     font-weight: 700;
     color: darkcyan;
+    background:whitesmoke;
+    border-radius: 4px;
+    border:none;
+    cursor: pointer;
 }
+
+
 
 .hidden{
     display: none;
