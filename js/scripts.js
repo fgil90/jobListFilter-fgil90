@@ -123,12 +123,5 @@ function filterResults() {
     });
 }
 
-
-
 //function calls
-
 populateMainDiv();
-
-a = findElement('.component');
-
-console.log(a.textContent);
