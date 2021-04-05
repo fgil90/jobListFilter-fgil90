@@ -55,23 +55,24 @@ function removeAllFilters() {
     filterResults();
 }
 
+function addButtons(list){
+    let output ='';
+
+    if (list.length > 0) {
+        for (i = 0; i < list.length; i++) {
+            output += "<button value='languages' onclick='changeFilters(event)' class='language'>" + list[i] + "</button>";
+        }
+    }
+    return output;
+}
+
+
 function populateMainDiv() {
     main.innerHTML = '';
 
     data.forEach(element => {
-        let lang = '';
-        let tools = '';
-        if (element.languages.length > 0) {
-            for (i = 0; i < element.languages.length; i++) {
-                lang += "<button value='languages' onclick='changeFilters(event)' class='language'>" + element.languages[i] + "</button>";
-            }
-        }
-
-        if (element.tools.length > 0) {
-            for (i = 0; i < element.tools.length; i++) {
-                tools += "<button value='tools' onclick='changeFilters(event)'  class='tool' >" + element.tools[i] + "</button>";
-            }
-        }
+        let lang = addButtons(element.languages);
+        let tools = addButtons(element.tools);        
 
         let component =
             `<div class="component">
