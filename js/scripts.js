@@ -41,7 +41,6 @@ function populateFiltersContainer() {
         filtersLeft.innerHTML +=
             `<div class="filter-container">
             <p onclick="changeFilters(event)" class="filter">${element}</p>
-            <p class="x-button">&MediumSpace; &#9587;</p>
         </div>`;
     });
 

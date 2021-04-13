@@ -16,8 +16,6 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -48,8 +46,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - Javascript
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -106,8 +102,6 @@ I'm very proud of my content generating function, as well as the sorting, as the
 
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
